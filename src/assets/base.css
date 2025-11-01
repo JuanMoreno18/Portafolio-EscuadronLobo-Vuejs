@@ -8,7 +8,7 @@
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
 
-  --vt-c-indigo: #2c3e50;
+  --vt-c-indigo: #0d6d29;
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
@@ -35,6 +35,7 @@
 
   --section-gap: 160px;
 }
+/*estilos para modo oscuro */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -83,4 +84,25 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+li{
+  list-style: none;
+}
+/*Agregado en el capitulo 5*/
+/*Estas son las reglas globales de la etiqueta section del main en App.vue*/
+section {
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+  margin: 3rem 0rem 2rem 0rem;
+}
+section h2{
+  font-size: 2rem;
+  color: aliceblue;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+section h3{
+  color: rgb(209, 183, 148);
 }
