@@ -1,253 +1,168 @@
 <script setup>
+import { ref } from 'vue'
 
-import { ref } from 'vue';
-var misProyectos = ref([]);
-misProyectos.value = ([
-
-    {
-        id: 1,
-        src: "/src/assets/vueProyecto.jpg",
-        titulo: "Sistema de Gestión de Inventario (2024)",
-        descripcion: "Desarrollamos una aplicación web con Vue.js y Node.js para el control de stock en tiempo real, con alertas automáticas y reportes detallados.",
-        projectoLink: "https://www.google.com.ar",
-        githublink: "https://github.com/usuario/proyecto"
-    },
-    {
-        id: 2,
-        src: "/src/assets/reactProyecto.jpg",
-        titulo: "Plataforma E-Learning Interactiva (2023)",
-        descripcion: "Creamos una plataforma educativa con React que permite a los profesores subir contenido multimedia y realizar seguimiento del progreso de los estudiantes.",
-        projectoLink: "https://www.google.com.ar",
-        githublink: "https://github.com/usuario/proyecto"
-    },
-    {
-        id: 3,
-        src: "/src/assets/flutterProyecto.png",
-        titulo: "App de Gestión de Tareas Colaborativas (2023)",
-        descripcion: "Diseñamos una aplicación móvil con Flutter para equipos de trabajo, con tableros Kanban, notificaciones push y sincronización en la nube.",
-        projectoLink: "https://www.google.com.ar",
-        githublink: "https://github.com/usuario/proyecto"
-    },
-    {
-        id: 4,
-        src: "/src/assets/chartProyecto.jpg",
-        titulo: "Dashboard Analítico en Tiempo Real (2024)",
-        descripcion: "Implementamos un panel de control con visualización de datos en tiempo real usando Chart.js y WebSockets para monitoreo de métricas empresariales.",
-        projectoLink: "https://www.google.com.ar",
-        githublink: "https://github.com/usuario/proyecto"
-    },
+const misProyectos = ref([
+  {
+    id: 1,
+    src: "/src/assets/vueProyecto.jpg",
+    titulo: "Sistema de Gestión de Inventario (2024)",
+    descripcion: "Aplicación web con Vue.js y Node.js para control de stock en tiempo real, con alertas automáticas y reportes detallados.",
+    projectoLink: "https://www.google.com.ar",
+    githublink: "https://github.com/usuario/proyecto"
+  },
+  {
+    id: 2,
+    src: "/src/assets/reactProyecto.jpg",
+    titulo: "Plataforma E-Learning Interactiva (2023)",
+    descripcion: "Plataforma educativa con React que permite a los profesores subir contenido y hacer seguimiento del progreso de los estudiantes.",
+    projectoLink: "https://www.google.com.ar",
+    githublink: "https://github.com/usuario/proyecto"
+  },
+  {
+    id: 3,
+    src: "/src/assets/flutterProyecto.png",
+    titulo: "App de Gestión de Tareas Colaborativas (2023)",
+    descripcion: "Aplicación móvil con Flutter para equipos de trabajo, con tableros Kanban y sincronización en la nube.",
+    projectoLink: "https://www.google.com.ar",
+    githublink: "https://github.com/usuario/proyecto"
+  },
+  {
+    id: 4,
+    src: "/src/assets/chartProyecto.jpg",
+    titulo: "Dashboard Analítico en Tiempo Real (2024)",
+    descripcion: "Panel de control con visualización de datos en tiempo real usando Chart.js y WebSockets.",
+    projectoLink: "https://www.google.com.ar",
+    githublink: "https://github.com/usuario/proyecto"
+  },
 ])
-
 </script>
 
 <template>
-<!-- Aquí va el código HTML de la galería de proyectos -->
-    <div class="galeria">
-        <!-- Itera sobre cada proyecto en la lista de misProyectos -->
-        <!-- key es una propiedad especial que se utiliza para identificar de forma única cada elemento en una lista de Vue.js -->
-        <div class="proyecto" v-for="proyecto in misProyectos" :key="proyecto.id">
-            <!-- Muestra la imagen del proyecto utilizando : que es una directiva de enlace de atributo en Vue.js -->
-            <img :src="proyecto.src" :alt="proyecto.titulo">
-            <div class="proyecto-info">
-                <!-- Muestra el título y la descripción del proyecto utilizando la interpolación de Vue.js -->
-                <h3>{{ proyecto.titulo }}</h3>
-                <p>{{ proyecto.descripcion }}</p>
-                <div class="proyecto-links">
-                    <a :href="proyecto.projectoLink" class="btn-ver-mas" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
-                    <a :href="proyecto.githubLink" class="github-link" target="_blank" rel="noopener noreferrer">Ver Codigo en GitHub</a>
-                </div>
-            </div>
+  <div class="galeria">
+    <div class="proyecto" v-for="proyecto in misProyectos" :key="proyecto.id">
+      <img :src="proyecto.src" :alt="proyecto.titulo" />
+      <div class="proyecto-info">
+        <h3>{{ proyecto.titulo }}</h3>
+        <p>{{ proyecto.descripcion }}</p>
+        <div class="proyecto-links">
+          <a :href="proyecto.projectoLink" class="btn-ver-mas" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+          <a :href="proyecto.githublink" class="github-link" target="_blank" rel="noopener noreferrer">Ver Código en GitHub</a>
         </div>
+      </div>
     </div>
-    
-     <!-- <div class="galeria">
-        <div class="proyecto-card">
-            <img src="/src/assets/annidada-tech.jpg" alt="Proyecto 1">
-            <div class="proyecto-info">
-                <h3>Ecommerce</h3>
-                <p>Cree una plataforma de comercio electronico que incrementa las ventas en un 35% durante el primer año</p>
-                <div class="proyecto-links">
-                    <a href="https://proyecto1.com" class="btn-ver-mas" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
-                    <a href="https://github.com/usuario/proyecto1" class="github-link" target="_blank"
-                        rel="noopener noreferrer">Ver Codigo en GitHub</a>
-                </div>
-            </div>
-        </div>
-        <div class="proyecto-card">
-            <img src="/src/assets/annidada-tech.jpg" alt="Proyecto 1">
-            <div class="proyecto-info">
-                <h3>Ecommerce</h3>
-                <p>Cree una plataforma de comercio electronico que incrementa las ventas en un 35% durante el primer año</p>
-                <div class="proyecto-links">
-                    <a href="https://proyecto1.com" class="btn-ver-mas" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
-                    <a href="https://github.com/usuario/proyecto1" class="github-link" target="_blank"
-                        rel="noopener noreferrer">Ver Codigo en GitHub</a>
-                </div>
-            </div>
-        </div>
-        <div class="proyecto-card">
-            <img src="/src/assets/annidada-tech.jpg" alt="Proyecto 1">
-            <div class="proyecto-info">
-                <h3>Ecommerce</h3>
-                <p>Cree una plataforma de comercio electronico que incrementa las ventas en un 35% durante el primer año</p>
-                <div class="proyecto-links">
-                    <a href="https://proyecto1.com" class="btn-ver-mas" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
-                    <a href="https://github.com/usuario/proyecto1" class="github-link" target="_blank"
-                        rel="noopener noreferrer">Ver Codigo en GitHub</a>
-                </div>
-            </div>
-        </div>
-    </div>  -->
+  </div>
 </template>
 
 <style scoped>
 .galeria {
-    /* Establece el ancho de la galería al 100% del contenedor padre */
-    width: 100%;
-    /* Establece la altura de la galería al 100% del contenedor padre */
-    height: 100%;
-    /* Utiliza flexbox para organizar los elementos hijos en la galería */
-    display: flex;
-    /* Permite que los elementos se ajusten y pasen a la siguiente línea si no caben en una sola fila */
-    flex-wrap: wrap;
-    /* Establece un espacio de 20px entre los elementos de la galería */
-    gap: 20px;
-    /* Agrega un padding de 20px alrededor de la galería */
-    padding: 20px;
-    /* Centra los elementos hijos horizontalmente */
-    justify-content: center;
-    /* Aplica un fondo con un degradado de colores */
-    background: linear-gradient(-45deg, #e21526, #03346E, #6EACDA, #E2E2B6);
-    /* Ajusta el tamaño del fondo para que cubra el área completa */
-    background-size: 400% 400%;
-    /* Aplica una animación al fondo que dura 15 segundos, tiene una transición suave y se repite infinitamente */
-    animation: gradient 15s ease infinite;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* base adaptable */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  background: linear-gradient(-45deg, #e21526, #03346E, #6EACDA, #E2E2B6);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
-/* Define una animación llamada 'gradient' para cambiar la posición del fondo */
+/* Animación de fondo */
 @keyframes gradient {
-   
-    /* Al inicio, el fondo está posicionado en el 0% horizontal y 50% vertical */
-    0% {
-        background-position: 0% 50%;
-    }
-    
-    /* A la mitad de la animación, el fondo se desplaza al 100% horizontal y 50% vertical */
-    50% {
-        background-position: 100% 50%;
-    }
-    
-    /* Al final, el fondo vuelve a la posición inicial */
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-/* La clase 'proyecto' es el contenedor individual de cada proyecto */
+
+/* ----- TARJETA DEL PROYECTO ----- */
 .proyecto {
-    /* Utiliza flexbox para organizar el contenido del proyecto en una columna */
-    display: flex;
-    /* Establece la dirección de los elementos en columna */
-    flex-direction: column;
-    /* Aplica un borde de 2px sólido y color gris claro (#ddd) alrededor del proyecto */
-    border: 2px solid #ddd;
-    /* Redondea las esquinas del contenedor */
-    border-radius: 8px;
-    /* Oculta cualquier contenido que se desborde del contenedor */
-    overflow: hidden;
-    /* Establece un color de fondo claro para el proyecto */
-    background-color: #f9f9f9;
-    /* Define el ancho máximo del proyecto en 222px */
-    max-width: 222px;
-    /* Hace que el contenedor se ajuste flexiblemente ocupando al menos 300px de ancho */
-    flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo para las imágenes dentro del contenedor 'proyecto' */
+.proyecto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
 .proyecto img {
-    /* Hace que la imagen ocupe el 100% del ancho del contenedor */
-    width: 100%;
-    /* Mantiene la relación de aspecto de la imagen */
-    height: auto;
-    /* Asegura que la imagen se muestre como un bloque, sin espacio en línea alrededor */
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* La clase 'proyecto-info' contiene la información del proyecto */
 .proyecto-info {
-    /* Agrega un padding de 15px alrededor de la información */
-    padding: 15px;
-    /* Centra el texto dentro del contenedor */
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
-/* Estilo para los títulos de los proyectos */
 .proyecto-info h3 {
-    /* Establece un margen superior e inferior de 10px */
-    margin: 10px 0;
-    /* Define el tamaño de la fuente a 1.3em (relativo al tamaño de fuente del contenedor) */
-    font-size: 1.3em;
-    /* Aplica un color gris oscuro (#333) al texto */
-    color: #333;
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333;
 }
-/* Estilo para los párrafos de los proyectos */
+
 .proyecto-info p {
-    /* Establece un margen superior e inferior de 10px */
-    margin: 10px 0;
-    /* Define el tamaño de la fuente a 1em (igual al tamaño de fuente base) */
-    font-size: 1em;
-    /* Aplica un color gris (#666) al texto */
-    color: #666;
+  font-size: 0.95em;
+  color: #666;
+  margin: 10px 0;
 }
 
-/* La clase 'proyecto-links' organiza los enlaces y botones del proyecto */
+/* Enlaces */
 .proyecto-links {
-    /* Utiliza flexbox para organizar los enlaces en una columna */
-    display: flex;
-    /* Establece la dirección de los elementos en columna */
-    flex-direction: column;
-    /* Establece un espacio de 10px entre los elementos */
-    gap: 10px;
-    /* Agrega un margen superior de 10px */
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-/* Estilo para el botón 'Ver Más' dentro de la clase 'proyecto-links' */
-.proyecto-links .btn-ver-mas {
-    /* Aplica un color de fondo azul (#007BFF) */
-
-    background-color: #007BFF;
-    /* Aplica un color de texto blanco */
-    color: #fff;
-    /* Agrega un padding de 10px en vertical y 15px en horizontal */
-    padding: 10px 15px;
-    /* Redondea las esquinas del botón */
-    border-radius: 5px;
-    /* Elimina el subrayado del texto */
-    text-decoration: none;
-    /* Aplica una transición suave al cambiar el color de fondo */
-    transition: background-color 0.3s;
+.btn-ver-mas {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-/* Estilo para cuando el botón 'Ver Más' es hover */
-.proyecto-links .btn-ver-mas:hover {
-    /* Cambia el color de fondo a un azul más oscuro (#0056b3) */
-    background-color: #0056b3;
+.btn-ver-mas:hover {
+  background-color: #0056b3;
 }
 
-/* Estilo para el enlace a GitHub dentro de la clase 'proyecto-links' */
-.proyecto-links .github-link {
-    /* Aplica un color gris oscuro (#333) al texto */
-    color: #333;
-    /* Elimina el subrayado del texto */
-    text-decoration: none;
-    /* Establece el tamaño de fuente a 0.9em (un poco más pequeño que el tamaño base) */
-    font-size: 0.9em;
+.github-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9em;
 }
 
-/* Estilo para cuando el enlace a GitHub es hover */
-.proyecto-links .github-link:hover {
-    /* Añade un subrayado al texto */
-    text-decoration: underline;
+.github-link:hover {
+  text-decoration: underline;
 }
 
+/* ----- RESPONSIVE ----- */
+
+/* 📱 Celulares → 2 columnas */
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 🖥️ Computadoras → 4 columnas */
+@media (min-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 </style>

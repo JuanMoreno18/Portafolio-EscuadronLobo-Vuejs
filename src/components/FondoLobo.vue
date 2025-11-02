@@ -189,4 +189,9 @@ canvas {
 #fgCanvas {
   z-index: 1; /* Lobo */
 }
+@media (max-width: 768px) {
+  #fgCanvas {
+    display: none; /* Oculta el Canvas que dibuja las partículas del lobo */
+  }
+}
 </style>

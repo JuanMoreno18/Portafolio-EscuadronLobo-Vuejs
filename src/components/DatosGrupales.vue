@@ -220,28 +220,42 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.2rem;
-  }
-  
-  h2 {
-    font-size: 1.1rem;
-  }
-  
-  .card-header,
-  .card-body,
-  .card-footer {
-    padding: 25px 20px;
-  }
-  
-  .presentacion {
-    font-size: 1rem;
-    text-align: left;
-  }
-  
-  .icon-redsocial {
-    width: 45px;
-    height: 45px;
-  }
+    /* ✨ AJUSTE ADICIONAL para asegurar la alineación de la presentación 
+    (Si queremos que el texto justificado se vea mejor en móviles, lo centramos o alineamos a la izquierda) 
+    */
+    .presentacion {
+        text-align: left; /* Mantenemos la alineación a la izquierda para mejor lectura en móviles */
+    }
+
+    /* Reducir el padding horizontal de la tarjeta para evitar que se pegue demasiado a los bordes */
+    .card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* Ajustes de tamaño y padding para móvil */
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.1rem;
+    }
+    
+    .card-header,
+    .card-body,
+    .card-footer {
+        padding: 25px 20px;
+    }
+    
+    .icon-redsocial {
+        width: 40px; /* Ligeramente más pequeños */
+        height: 40px;
+        padding: 6px;
+    }
+
+    .container-lista {
+        gap: 10px; /* Reducir el espacio entre íconos */
+    }
 }
 </style>

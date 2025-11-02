@@ -5,6 +5,7 @@ import DatosGrupales from './components/DatosGrupales.vue';
 import IntegrantesComponente from './components/IntegrantesComponente.vue';
 import ProyectosComponente from './components/ProyectosComponente.vue';
 import HabilidadesComponente from './components/HabilidadesComponente.vue';
+import FondoBinario from '@/assets/binario.png';
 
 </script>
 
@@ -57,14 +58,10 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: linear-gradient(-45deg, #020916, #0c1a2e, #0f1f38, #08121f, #111e33, #040d1a);
-  background-size: 400% 400%;
-  animation: gradientShift 20s ease infinite;
+  background-color: #000810;
   position: relative;
-  overflow-x: hidden;
 }
 
-/* Capa de brillo sutil */
 body::before {
   content: '';
   position: fixed;
@@ -72,68 +69,17 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: 
-    radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 80% 70%, rgba(30, 64, 175, 0.06) 0%, transparent 45%),
-    radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.04) 0%, transparent 60%);
+  background-image: url('@/assets/binario.png');
+  background-size: auto; /* Cambiado de cover a auto */
+  background-position: top left; /* O center si prefieres */
+  background-attachment: fixed;
+  background-repeat: repeat; /* Para que se repita como mosaico */
+  opacity: 0.4;
   pointer-events: none;
   z-index: 0;
-  animation: pulseGlow 12s ease-in-out infinite;
 }
 
-/* Efecto de estrellas/partículas */
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    radial-gradient(2px 2px at 20% 30%, rgba(255, 255, 255, 0.15), transparent),
-    radial-gradient(2px 2px at 60% 70%, rgba(255, 255, 255, 0.1), transparent),
-    radial-gradient(1px 1px at 50% 50%, rgba(255, 255, 255, 0.1), transparent),
-    radial-gradient(1px 1px at 80% 10%, rgba(255, 255, 255, 0.15), transparent),
-    radial-gradient(2px 2px at 90% 60%, rgba(255, 255, 255, 0.1), transparent),
-    radial-gradient(1px 1px at 33% 85%, rgba(255, 255, 255, 0.1), transparent);
-  background-size: 200% 200%;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.3;
-  animation: starsMove 30s linear infinite;
-}
 
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes pulseGlow {
-  0%, 100% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.8;
-    transform: scale(1.05);
-  }
-}
-
-@keyframes starsMove {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
 
 #app {
   min-height: 100vh;

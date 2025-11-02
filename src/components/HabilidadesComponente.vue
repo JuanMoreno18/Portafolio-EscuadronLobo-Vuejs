@@ -248,13 +248,43 @@ const habilidades = ref([
 }
 
 @media (max-width: 768px) {
-    .skills-categoria h3 {
-        justify-content: center;
-    }
+  /* Asegura que el contenedor principal centre las tarjetas */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+  }
 
-    .skill {
-        justify-content: center;
-    }
+  /* 🔹 Tamaño más compacto para que entren bien */
+  .skill {
+    width: 90px;
+    margin: 0.3rem;
+    text-align: center;
+  }
+
+  .skill img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .skill span {
+    font-size: 0.8em;
+  }
+
+  /* 🔹 Alternar filas de 3 y 2 tarjetas */
+  .skills-categoria .skill:nth-child(5n+1),
+  .skills-categoria .skill:nth-child(5n+2),
+  .skills-categoria .skill:nth-child(5n+3) {
+    flex: 0 1 calc(30% - 0.5rem); /* 3 tarjetas por fila */
+  }
+
+  .skills-categoria .skill:nth-child(5n+4),
+  .skills-categoria .skill:nth-child(5n+5) {
+    flex: 0 1 calc(45% - 0.5rem); /* 2 tarjetas por fila */
+  }
 }
+
+
 
 </style>
