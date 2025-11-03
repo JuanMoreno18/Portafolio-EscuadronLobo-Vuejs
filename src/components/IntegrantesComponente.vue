@@ -403,7 +403,7 @@ const integrantes = ref([
 }
 
 /* Celulares pequeños */
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 424px) {
   .titulo {
     font-size: 1.1rem;
   }
@@ -415,7 +415,7 @@ const integrantes = ref([
 
   .card-integrante {
     padding: 0rem;
-    aspect-ratio: 0.50;
+    aspect-ratio: 0.65;
   }
 
   .imagen-contenedor {
@@ -440,5 +440,45 @@ const integrantes = ref([
     width: 16px;
     height: 16px;
   }
+  
+  /* Celulares mas pequeños */
+  @media (max-width: 320px) {
+  .titulo {
+    font-size: 1rem;
+  }
+
+  .grid-integrantes {
+    gap: 0rem;
+    padding: 0.1rem;
+  }
+
+  .card-integrante {
+    padding: 0rem;
+    aspect-ratio: 0.45;
+  }
+
+  .imagen-contenedor {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nombre {
+    font-size: 0.60rem;
+  }
+
+  .descripcion {
+    font-size: 0.55rem;
+  }
+
+  .enlace-red {
+    width: 28px;
+    height: 28px;
+  }
+
+  .enlace-red svg {
+    width: 16px;
+    height: 16px;
+  }
+}
 }
 </style>
