@@ -1,10 +1,14 @@
 <script setup>
+import Proyecto1 from '/src/assets/vueProyecto.jpg'
+import Proyecto2 from '/src/assets/reactProyecto.jpg'
+import Proyecto3 from '/src/assets/flutterProyecto.png'
+import Proyecto4 from '/src/assets/chartProyecto.jpg'
 import { ref } from 'vue'
 
 const misProyectos = ref([
   {
     id: 1,
-    src: "/src/assets/vueProyecto.jpg",
+    src: Proyecto1,
     titulo: "Sistema de Gestión de Inventario (2024)",
     descripcion: "Aplicación web con Vue.js y Node.js para control de stock en tiempo real, con alertas automáticas y reportes detallados.",
     projectoLink: "https://www.google.com.ar",
@@ -12,7 +16,7 @@ const misProyectos = ref([
   },
   {
     id: 2,
-    src: "/src/assets/reactProyecto.jpg",
+    src: Proyecto2,
     titulo: "Plataforma E-Learning Interactiva (2023)",
     descripcion: "Plataforma educativa con React que permite a los profesores subir contenido y hacer seguimiento del progreso de los estudiantes.",
     projectoLink: "https://www.google.com.ar",
@@ -20,7 +24,7 @@ const misProyectos = ref([
   },
   {
     id: 3,
-    src: "/src/assets/flutterProyecto.png",
+    src: Proyecto3,
     titulo: "App de Gestión de Tareas Colaborativas (2023)",
     descripcion: "Aplicación móvil con Flutter para equipos de trabajo, con tableros Kanban y sincronización en la nube.",
     projectoLink: "https://www.google.com.ar",
@@ -28,7 +32,7 @@ const misProyectos = ref([
   },
   {
     id: 4,
-    src: "/src/assets/chartProyecto.jpg",
+    src: Proyecto4,
     titulo: "Dashboard Analítico en Tiempo Real (2024)",
     descripcion: "Panel de control con visualización de datos en tiempo real usando Chart.js y WebSockets.",
     projectoLink: "https://www.google.com.ar",

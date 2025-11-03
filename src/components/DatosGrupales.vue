@@ -1,14 +1,18 @@
 <script setup>
+import linkedin from '/src/assets/linkedin_icon.svg'
+import instagram from '/src/assets/instagram_icon.svg'
+import github from '/src/assets/github_icon.svg'
+import curriculum from '/src/assets/cv_resume_icon.svg'
 import FondoLobo from './FondoLobo.vue';
 const title = "Escuadron Lobo";
 const descripcion = "Estudiantes de la Tecnicatura Universitaria en Programación - UTN";
 const residencia = "San Rafael, Mendoza, Argentina";
 const presentacion = "Somos un grupo de estudiantes comprometidos con el trabajo en equipo y el aprendizaje constante. A través de proyectos prácticos y colaborativos, aplicamos nuestros conocimientos para desarrollar soluciones creativas y funcionales, preparándonos para los desafíos del mundo profesional.";
 const redesociales = [
-  { id: 1, name: "linkedin", src: "/src/assets/linkedin_icon.svg", url: "https://www.linkedin.com/in/jose-perez/" },
-  { id: 2, name: "instagram", src: "/src/assets/instagram_icon.svg", url: "https://www.instagram.com/joseperez/" },
-  { id: 3, name: "github", src: "/src/assets/github_icon.svg", url: "" },
-  { id: 4, name: "curriculum", src: "/src/assets/cv_resume_icon.svg", url: "" },
+  { id: 1, name: "linkedin", src: linkedin, url: "https://www.linkedin.com/in/jose-perez/" },
+  { id: 2, name: "instagram", src: instagram, url: "https://www.instagram.com/joseperez/" },
+  { id: 3, name: "github", src: github, url: "" },
+  { id: 4, name: "curriculum", src: curriculum, url: "" },
 ];
 const telefono = "+54 9 2604-056016";
 </script>
