@@ -267,44 +267,115 @@ const habilidades = ref([
     transition: 1s ease;
 }
 
+/* Tablets */
 @media (max-width: 768px) {
-  /* Asegura que el contenedor principal centre las tarjetas */
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.7rem;
+  .skills-contenedor {
+    padding: 1.5rem;
   }
 
-  /* 🔹 Tamaño más compacto para que entren bien */
+  .skills {
+    gap: 0.8rem;
+    justify-content: center;
+  }
+
   .skill {
-    width: 90px;
-    margin: 0.3rem;
-    text-align: center;
+    flex: 1 1 calc(30% - 0.8rem);
+    max-width: none;
+    min-width: 120px;
+    padding: 0.6em;
   }
 
   .skill img {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
   }
 
   .skill span {
-    font-size: 0.8em;
+    font-size: 0.85em;
   }
 
-  /* 🔹 Alternar filas de 3 y 2 tarjetas */
-  .skills-categoria .skill:nth-child(5n+1),
-  .skills-categoria .skill:nth-child(5n+2),
-  .skills-categoria .skill:nth-child(5n+3) {
-    flex: 0 1 calc(30% - 0.5rem); /* 3 tarjetas por fila */
-  }
-
-  .skills-categoria .skill:nth-child(5n+4),
-  .skills-categoria .skill:nth-child(5n+5) {
-    flex: 0 1 calc(45% - 0.5rem); /* 2 tarjetas por fila */
+  .skills-categoria h3 {
+    font-size: 1.3em;
   }
 }
 
+/* Celulares 375px - 424px */
+@media (min-width: 375px) and (max-width: 425px) {
+  .skills-contenedor {
+    padding: 1rem;
+  }
 
+  .skills {
+    gap: 0.6rem;
+    justify-content: center;
+  }
 
+  .skill {
+    flex: 1 1 calc(48% - 0.6rem); /* 2 tarjetas por fila */
+    max-width: none;
+    min-width: 0;
+    padding: 0.5em 0.3em;
+    gap: 6px;
+  }
+
+  .skill img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .skill span {
+    font-size: 0.75em;
+    line-height: 1.2;
+  }
+
+  .skills-categoria h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.8rem;
+  }
+
+  .skills-categoria {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Celulares pequeños (menos de 375px) */
+@media (max-width: 374px) {
+  .skills-contenedor {
+    padding: 0.8rem;
+  }
+
+  .skills {
+    gap: 0.5rem;
+  }
+
+  .skill {
+    flex: 1 1 calc(48% - 0.5rem);
+    padding: 0.4em 0.2em;
+    gap: 5px;
+  }
+
+  .skill img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .skill span {
+    font-size: 0.7em;
+  }
+
+  .skills-categoria h3 {
+    font-size: 1.1em;
+  }
+}
+
+/* Computadoras */
+@media (min-width: 1024px) {
+  .skills {
+    gap: 1.5rem;
+  }
+
+  .skill {
+    flex: 1 1 calc(20% - 1.5rem);
+  }
+}
 </style>

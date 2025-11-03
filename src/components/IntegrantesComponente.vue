@@ -136,9 +136,18 @@ const integrantes = ref([
     class="enlace-red"
     title="Perfil profesional"
   >
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 19H5V9h3v10zM6.5 7.5C5.67 7.5 5 6.83 5 6s.67-1.5 1.5-1.5S8 5.17 8 6s-.67 1.5-1.5 1.5zM19 19h-3v-5.5c0-3.03-4-2.8-4 0V19h-3V9h3v1.5c1.4-2.59 7-2.78 7 2.48V19z"/>
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+  
+  <rect width="24" height="24" rx="5" fill="#0A66C2"/>
+
+  <!-- Hoja del currículum  -->
+  <rect x="3.5" y="2.5" width="17" height="19" rx="2" ry="2" fill="#F0F6FF"/>
+  <circle cx="12" cy="9" r="4" fill="#0A66C2"/> 
+  <path fill="#0A66C2" d="M5.8 15.5c0-3 12.4-3 12.4 0v2.5H5.8v-2.5z"/> 
+
+  <rect x="7" y="19.3" width="10" height="1" fill="#90CAF9"/>
+  <rect x="7" y="21" width="8" height="1" fill="#90CAF9"/>
+</svg>
   </a>
 </div>
           </div>

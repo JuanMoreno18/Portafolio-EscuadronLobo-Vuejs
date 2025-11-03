@@ -60,7 +60,7 @@ const misProyectos = ref([
 <style scoped>
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* base adaptable */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
   justify-items: center;
@@ -69,7 +69,6 @@ const misProyectos = ref([
   animation: gradient 15s ease infinite;
 }
 
-/* Animación de fondo */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -102,13 +101,17 @@ const misProyectos = ref([
 
 .proyecto img {
   width: 100%;
-  height: auto;
+  height: 180px;
+  object-fit: cover;
   display: block;
 }
 
 .proyecto-info {
   padding: 15px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .proyecto-info h3 {
@@ -121,6 +124,7 @@ const misProyectos = ref([
   font-size: 0.95em;
   color: #666;
   margin: 10px 0;
+  flex-grow: 1;
 }
 
 /* Enlaces */
@@ -128,7 +132,8 @@ const misProyectos = ref([
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: auto;
+  padding-top: 10px;
 }
 
 .btn-ver-mas {
@@ -138,6 +143,7 @@ const misProyectos = ref([
   border-radius: 6px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  font-size: 0.9em;
 }
 
 .btn-ver-mas:hover {
@@ -148,25 +154,120 @@ const misProyectos = ref([
   color: #333;
   text-decoration: none;
   font-size: 0.9em;
+  padding: 8px;
 }
 
 .github-link:hover {
   text-decoration: underline;
+  color: #007BFF;
 }
 
 /* ----- RESPONSIVE ----- */
 
-
+/* Tablets */
 @media (max-width: 768px) {
   .galeria {
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .proyecto {
+    max-width: 100%;
   }
 }
 
-/* 🖥️ Computadoras → 4 columnas */
+/* Celulares 375px - 424px */
+@media (min-width: 375px) and (max-width: 425px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 2px;
+  }
+
+  .proyecto {
+    max-width: 95%;
+    border-radius: 8px;
+  }
+
+  .proyecto img {
+    height: 120px;
+  }
+
+  .proyecto-info {
+    padding: 1px;
+  }
+
+  .proyecto-info h3 {
+    font-size: 1em;
+    margin: 0px 0;
+  }
+
+  .proyecto-info p {
+    font-size: 0.85em;
+    margin: 0px 0;
+    line-height: 1.3;
+  }
+
+  .proyecto-links {
+    gap: 0px;
+    margin-top: 2px;
+  }
+
+  .btn-ver-mas {
+    padding: 6px 10px;
+    font-size: 0.85em;
+  }
+
+  .github-link {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+}
+
+/* Celulares pequeños (menos de 375px) */
+@media (max-width: 374px) {
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .proyecto {
+    max-width: 100%;
+  }
+
+  .proyecto img {
+    height: 160px;
+  }
+
+  .proyecto-info {
+    padding: 12px;
+  }
+
+  .proyecto-info h3 {
+    font-size: 1.1em;
+  }
+
+  .proyecto-info p {
+    font-size: 0.9em;
+  }
+}
+
+/* Computadoras → 4 columnas */
 @media (min-width: 1024px) {
   .galeria {
     grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 25px;
+  }
+
+  .proyecto {
+    max-width: 300px;
+  }
+
+  .proyecto img {
+    height: 200px;
   }
 }
 </style>

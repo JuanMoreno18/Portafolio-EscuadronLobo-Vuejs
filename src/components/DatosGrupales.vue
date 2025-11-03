@@ -223,43 +223,157 @@ h3 {
   margin: 20px 0 10px 0;
 }
 
+/* Tablets */
 @media (max-width: 768px) {
-    /* ✨ AJUSTE ADICIONAL para asegurar la alineación de la presentación 
-    (Si queremos que el texto justificado se vea mejor en móviles, lo centramos o alineamos a la izquierda) 
-    */
-    .presentacion {
-        text-align: left; /* Mantenemos la alineación a la izquierda para mejor lectura en móviles */
-    }
+  .datos-grupales {
+    padding: 15px;
+  }
 
-    /* Reducir el padding horizontal de la tarjeta para evitar que se pegue demasiado a los bordes */
-    .card {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+  .card {
+    margin: 15px auto;
+    max-width: 95%;
+  }
 
-    /* Ajustes de tamaño y padding para móvil */
-    h1 {
-        font-size: 2.2rem;
-    }
-    
-    h2 {
-        font-size: 1.1rem;
-    }
-    
-    .card-header,
-    .card-body,
-    .card-footer {
-        padding: 25px 20px;
-    }
-    
-    .icon-redsocial {
-        width: 40px; /* Ligeramente más pequeños */
-        height: 40px;
-        padding: 6px;
-    }
+  .presentacion {
+    text-align: left;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
 
-    .container-lista {
-        gap: 10px; /* Reducir el espacio entre íconos */
-    }
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.1rem;
+  }
+  
+  .card-header,
+  .card-body,
+  .card-footer {
+    padding: 25px 20px;
+  }
+  
+  .icon-redsocial {
+    width: 42px;
+    height: 42px;
+    padding: 6px;
+  }
+
+  .container-lista {
+    gap: 12px;
+  }
+}
+
+/* Celulares 375px - 425px */
+@media (min-width: 375px) and (max-width: 425px) {
+  .datos-grupales {
+    padding: 10px;
+    min-height: auto;
+  }
+
+  .card {
+    margin: 10px auto;
+    max-width: 100%;
+    width: calc(100% - 20px);
+    border-radius: 15px;
+  }
+
+  .card-header {
+    padding: 25px 18px 20px;
+  }
+
+  .card-body {
+    padding: 20px 18px;
+  }
+
+  .card-footer {
+    padding: 20px 18px 25px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 0 5px;
+  }
+
+  .presentacion {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0 5px;
+  }
+
+  .container-lista {
+    gap: 10px;
+    margin: 0 0 20px 0;
+    justify-content: center;
+  }
+  
+  .icon-redsocial {
+    width: 38px;
+    height: 38px;
+    padding: 6px;
+  }
+
+  .location {
+    padding: 12px;
+    margin-top: 15px;
+    gap: 8px;
+  }
+
+  .location-icon {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 0.95rem;
+  }
+}
+
+/* Celulares pequeños (menos de 375px) */
+@media (max-width: 374px) {
+  .datos-grupales {
+    padding: 8px;
+  }
+
+  .card {
+    margin: 8px auto;
+    width: calc(100% - 16px);
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 0.95rem;
+  }
+
+  .presentacion {
+    font-size: 0.9rem;
+  }
+
+  .card-header,
+  .card-body,
+  .card-footer {
+    padding: 18px 15px;
+  }
+
+  .icon-redsocial {
+    width: 36px;
+    height: 36px;
+  }
+
+  .container-lista {
+    gap: 8px;
+  }
 }
 </style>
