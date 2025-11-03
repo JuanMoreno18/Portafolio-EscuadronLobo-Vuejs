@@ -15,8 +15,8 @@ const integrantes = ref([
   {
     id: 1,
     nombre: 'Lucas Aguilar',
-    rol: 'Full Stack Developer',
-    descripcion: 'Especializado en Vue.js y Node.js. Apasionado por crear soluciones escalables.',
+    //rol: 'Full Stack Developer',
+    descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/Luklas7u7',
     linkedin: 'https://linkedin.com/in/juanperez',
     imagen: LucasImg,
@@ -24,8 +24,8 @@ const integrantes = ref([
   {
     id: 2,
     nombre: 'Matias Altamiranda',
-    rol: 'Frontend Developer',
-    descripcion: 'Experta en diseño UI/UX y desarrollo con frameworks modernos de JavaScript.',
+    //rol: 'Frontend Developer',
+    descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/mathias5525',
     linkedin: 'https://linkedin.com/in/mariagonzalez',
     imagen: MatiasImg,
@@ -33,8 +33,8 @@ const integrantes = ref([
   {
     id: 3,
     nombre: 'Valentin Bertolone',
-    rol: 'Backend Developer',
-    descripcion: 'Enfocado en arquitectura de microservicios y bases de datos distribuidas.',
+    //rol: 'Backend Developer',
+    descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/Valentin-bertolone',
     linkedin: 'https://linkedin.com/in/carlosrodriguez',
     imagen: ValentinImg,
@@ -42,8 +42,8 @@ const integrantes = ref([
   {
     id: 4,
     nombre: 'Cecilia Farias',
-    rol: 'DevOps Engineer',
-    descripcion: 'Especializada en CI/CD, Docker y automatización de infraestructura.',
+    //rol: 'DevOps Engineer',
+    descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/Cecy-Fa',
     linkedin: 'https://linkedin.com/in/anamartinez',
     imagen: CeciliaImg,
@@ -51,8 +51,8 @@ const integrantes = ref([
   {
   id: 5,
     nombre: 'Juan Moreno',
-    rol: 'DevOps Engineer',
-    descripcion: 'Especializada en CI/CD, Docker y automatización de infraestructura.',
+    //rol: 'DevOps Engineer',
+    descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/JuanMoreno18',
     linkedin: 'https://linkedin.com/in/anamartinez',
     imagen: JuanImg,
@@ -60,8 +60,8 @@ const integrantes = ref([
   {
   id: 6,
     nombre: 'Valeria Pinaya',
-    rol: 'DevOps Engineer',
-    descripcion: 'Especializada en CI/CD, Docker y automatización de infraestructura.',
+    //rol: 'DevOps Engineer',
+    descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/ValeriaPinaya',
     linkedin: 'https://linkedin.com/in/anamartinez',
     imagen: ValeriaImg,
@@ -69,8 +69,8 @@ const integrantes = ref([
    {
   id: 7,
     nombre: 'Dario Scilipoti',
-    rol: 'DevOps Engineer',
-    descripcion: 'Especializada en CI/CD, Docker y automatización de infraestructura.',
+    //rol: 'DevOps Engineer',
+    descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/dariosci',
     linkedin: 'https://linkedin.com/in/anamartinez',
     imagen: DarioImg,
@@ -78,8 +78,8 @@ const integrantes = ref([
    {
   id: 8,
     nombre: 'Orlando Zelada',
-    rol: 'DevOps Engineer',
-    descripcion: 'Especializada en CI/CD, Docker y automatización de infraestructura.',
+    //rol: 'DevOps Engineer',
+    descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/ZeladaG940',
     linkedin: 'https://linkedin.com/in/anamartinez',
     imagen: OrlandoImg,
@@ -134,11 +134,25 @@ const integrantes = ref([
                 target="_blank" 
                 rel="noopener noreferrer"
                 class="enlace-red"
-                title="LinkedIn"
+                title="Perfil profesional"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+  <!-- Fondo cuadrado azul (LinkedIn style) -->
+  <rect width="24" height="24" rx="5" fill="#0A66C2"/>
+
+  <!-- Hoja del currículum (celeste más claro y suave) -->
+  <rect x="3.5" y="2.5" width="17" height="19" rx="2" ry="2" fill="#F0F6FF"/>
+
+  <!-- Figura humana (más grande, cabeza separada del cuerpo) -->
+  <circle cx="12" cy="9" r="4" fill="#0A66C2"/> <!-- Cabeza -->
+  <path fill="#0A66C2" d="M5.8 15.5c0-3 12.4-3 12.4 0v2.5H5.8v-2.5z"/> <!-- Cuerpo -->
+
+  <!-- Líneas de texto del CV -->
+  <rect x="7" y="19.3" width="10" height="1" fill="#90CAF9"/>
+  <rect x="7" y="21" width="8" height="1" fill="#90CAF9"/>
+</svg>
+
+
               </a>
             </div>
           </div>
@@ -247,7 +261,7 @@ const integrantes = ref([
 }
 
 .nombre {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--vt-c-white-soft);
   margin-bottom: 0.2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -263,7 +277,7 @@ const integrantes = ref([
 }
 
 .descripcion {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.25;
   margin-bottom: 0.7rem;
