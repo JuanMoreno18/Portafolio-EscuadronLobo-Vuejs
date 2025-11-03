@@ -156,7 +156,7 @@ const misProyectos = ref([
 
 /* ----- RESPONSIVE ----- */
 
-/* 📱 Celulares → 2 columnas */
+
 @media (max-width: 768px) {
   .galeria {
     grid-template-columns: repeat(2, 1fr);

@@ -5,7 +5,7 @@ import DatosGrupales from './components/DatosGrupales.vue';
 import IntegrantesComponente from './components/IntegrantesComponente.vue';
 import ProyectosComponente from './components/ProyectosComponente.vue';
 import HabilidadesComponente from './components/HabilidadesComponente.vue';
-import FondoBinario from '@/assets/binario.png';
+
 
 </script>
 
@@ -44,7 +44,7 @@ import FondoBinario from '@/assets/binario.png';
     <p>© 2025 Escuadron Lobo - Portafolio web</p>
   </footer>
 
-  <!-- Botón flotante (ya lo tienes en App.vue) -->
+  <!-- Botón flotante  -->
   <a href="#contacto" class="boton-flotante-contacto" title="Contacto">
   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
@@ -70,8 +70,8 @@ body::before {
   width: 100%;
   height: 100%;
   background-image: url('@/assets/binario.png');
-  background-size: auto; /* Cambiado de cover a auto */
-  background-position: top left; /* O center si prefieres */
+  background-size: auto; 
+  background-position: top left; 
   background-attachment: fixed;
   background-repeat: repeat; /* Para que se repita como mosaico */
   opacity: 0.4;

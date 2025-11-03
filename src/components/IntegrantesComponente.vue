@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import FondoLava from './FondoLava.vue';
+import FondoObjetos from './FondoObjetos.vue';
 import DarioImg from '@/assets/Dario.png';
 import MatiasImg from '@/assets/matias.png';
 import OrlandoImg from '@/assets/Orlando.png';
@@ -91,7 +91,7 @@ const integrantes = ref([
 <template>
   <div class="integrantes-contenedor" id="integrantes">
     <!-- Fondo animado -->
-    <FondoLava />
+    <FondoObjetos />
 
     <!-- Contenido encima del fondo -->
     <div class="contenido">
@@ -137,17 +137,14 @@ const integrantes = ref([
                 title="Perfil profesional"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-  <!-- Fondo cuadrado azul (LinkedIn style) -->
+  
   <rect width="24" height="24" rx="5" fill="#0A66C2"/>
 
-  <!-- Hoja del currículum (celeste más claro y suave) -->
+  <!-- Hoja del currículum  -->
   <rect x="3.5" y="2.5" width="17" height="19" rx="2" ry="2" fill="#F0F6FF"/>
+  <circle cx="12" cy="9" r="4" fill="#0A66C2"/> 
+  <path fill="#0A66C2" d="M5.8 15.5c0-3 12.4-3 12.4 0v2.5H5.8v-2.5z"/> 
 
-  <!-- Figura humana (más grande, cabeza separada del cuerpo) -->
-  <circle cx="12" cy="9" r="4" fill="#0A66C2"/> <!-- Cabeza -->
-  <path fill="#0A66C2" d="M5.8 15.5c0-3 12.4-3 12.4 0v2.5H5.8v-2.5z"/> <!-- Cuerpo -->
-
-  <!-- Líneas de texto del CV -->
   <rect x="7" y="19.3" width="10" height="1" fill="#90CAF9"/>
   <rect x="7" y="21" width="8" height="1" fill="#90CAF9"/>
 </svg>
@@ -205,7 +202,7 @@ const integrantes = ref([
 .grid-integrantes {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */     
-  gap: 1.2rem; /* Aumentado ligeramente */
+  gap: 1.2rem; /* Aumenta ligeramente */
   padding: 1rem;
   width: 100%;
   margin: 0 auto;
