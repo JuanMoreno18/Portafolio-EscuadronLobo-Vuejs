@@ -405,17 +405,17 @@ const integrantes = ref([
 /* Celulares pequeños */
 @media (max-width: 375px) {
   .titulo {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .grid-integrantes {
-    gap: 0.6rem;
-    padding: 0.3rem;
+    gap: 0rem;
+    padding: 0.1rem;
   }
 
   .card-integrante {
     padding: 0rem;
-    aspect-ratio: 0.56;
+    aspect-ratio: 0.50;
   }
 
   .imagen-contenedor {
@@ -424,21 +424,21 @@ const integrantes = ref([
   }
 
   .nombre {
-    font-size: 0.70rem;
+    font-size: 0.60rem;
   }
 
   .descripcion {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
 
   .enlace-red {
-    width: 34px;
-    height: 34px;
+    width: 28px;
+    height: 28px;
   }
 
   .enlace-red svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
 }
 </style>
