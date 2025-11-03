@@ -250,7 +250,7 @@ const integrantes = ref([
 }
 
 .nombre {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--vt-c-white-soft);
   margin-bottom: 0.3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -266,7 +266,7 @@ const integrantes = ref([
 }
 
 .descripcion {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.3;
   margin-bottom: 0.8rem;
@@ -310,7 +310,7 @@ const integrantes = ref([
 /* Tablets */
 @media (max-width: 768px) {
   .titulo {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .grid-integrantes {
@@ -321,10 +321,14 @@ const integrantes = ref([
   .integrantes-contenedor {
     padding: 2rem 1.5rem;
   }
+  .nombre {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
 
   .card-integrante {
-    padding: 1rem;
-    aspect-ratio: 0.7;
+    padding: 3rem;
+    aspect-ratio: 0.9;
   }
 
   .enlace-red {
@@ -352,9 +356,9 @@ const integrantes = ref([
   }
 
   .card-integrante {
-    padding: 0.8rem;
+    padding: 0rem;
     border-radius: 15px !important;
-    aspect-ratio: 0.51; /* Más alto en móviles */
+    aspect-ratio: 0.58; /* Más alto en móviles */
   }
 
   .imagen-contenedor {
@@ -401,7 +405,7 @@ const integrantes = ref([
 /* Celulares pequeños */
 @media (max-width: 375px) {
   .titulo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .grid-integrantes {
@@ -410,17 +414,17 @@ const integrantes = ref([
   }
 
   .card-integrante {
-    padding: 0.7rem;
-    aspect-ratio: 0.65;
+    padding: 0rem;
+    aspect-ratio: 0.56;
   }
 
   .imagen-contenedor {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
   .nombre {
-    font-size: 0.75rem;
+    font-size: 0.70rem;
   }
 
   .descripcion {
