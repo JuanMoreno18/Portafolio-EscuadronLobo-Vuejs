@@ -40,7 +40,7 @@ import HabilidadesComponente from './components/HabilidadesComponente.vue';
 
   <!-- Footer -->
   <footer>
-    <a href="id = aTop">Inicio</a>
+    <a href="#Top">Inicio</a>
     <p>© 2025 Escuadron Lobo - Portafolio web</p>
   </footer>
 
