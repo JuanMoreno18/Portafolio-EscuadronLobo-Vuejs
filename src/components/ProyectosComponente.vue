@@ -9,25 +9,25 @@ const misProyectos = ref([
   {
     id: 1,
     src: Proyecto1,
-    titulo: "Sistema de Gestión de Inventario (2024)",
-    descripcion: "Aplicación web con Vue.js y Node.js para control de stock en tiempo real, con alertas automáticas y reportes detallados.",
-    projectoLink: "https://www.google.com.ar",
+    titulo: "Proyecto final Ingles I (2025)",
+    descripcion: "Desarrollamos un video explicativo en inglés como parte de la cátedra de Inglés Técnico, presentando una aplicación de sistema de pedidos de un restaurante",
+    projectoLink: "https://drive.google.com/file/d/1cPmCz_bfWDtisGxR1lRpusifvb4j_9Vv/view",
     githublink: "https://github.com/usuario/proyecto"
   },
   {
     id: 2,
     src: Proyecto2,
-    titulo: "Plataforma E-Learning Interactiva (2023)",
-    descripcion: "Plataforma educativa con React que permite a los profesores subir contenido y hacer seguimiento del progreso de los estudiantes.",
-    projectoLink: "https://www.google.com.ar",
+    titulo: "Portafolio Web (2025)",
+    descripcion: "Diseñamos un portafolio web desde cero con HTML, CSS y JavaScript, mostrando nuestros proyectos y formación.",
+    projectoLink: "https://mathias5525.github.io/Portafolio-Grupo-Escuadron-Lobo/",
     githublink: "https://github.com/usuario/proyecto"
   },
   {
     id: 3,
     src: Proyecto3,
-    titulo: "App de Gestión de Tareas Colaborativas (2023)",
-    descripcion: "Aplicación móvil con Flutter para equipos de trabajo, con tableros Kanban y sincronización en la nube.",
-    projectoLink: "https://www.google.com.ar",
+    titulo: "Proyecto Académico - Sistema de Restaurante (2025)",
+    descripcion: "Diseñamos un programa en Pseint y rediseñado en Java sobre un sistema de pedidos en un restaurante.",
+    projectoLink: "https://www.youtube.com/watch?v=mVpUDBsDrZI",
     githublink: "https://github.com/usuario/proyecto"
   },
   {

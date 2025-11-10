@@ -31,19 +31,20 @@ const telefono = "+54 9 2604-056016";
       </div>
       
       <div class="card-footer">
-        <ul class="container-lista">
-          <li v-for="red in redesociales" :key="red.id">
-            <a :href="red.url" class="social-link" :aria-label="red.name">
-              <img class="icon-redsocial" :src="red.src" width="45" :alt="red.name"/>
-            </a>
-          </li>
-        </ul>
-        
-        <div class="location">
-          <span class="location-icon">📍</span>
-          <h4>{{ residencia }}</h4>
-        </div>
-      </div>
+
+  <ul class="container-lista">
+    <li v-for="red in redesociales" :key="red.id">
+      <a :href="red.url" class="social-link" :aria-label="red.name" target="_blank">
+        <img class="icon-redsocial" :src="red.src" width="45" :alt="red.name" />
+      </a>
+    </li>
+  </ul>
+
+  <div class="location">
+    <span class="location-icon">📍</span>
+    <h4>{{ residencia }}</h4>
+  </div>
+</div>
     </div>
   </section>
 </template>

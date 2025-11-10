@@ -18,7 +18,7 @@ const integrantes = ref([
     //rol: 'Full Stack Developer',
     descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/Luklas7u7',
-    linkedin: 'https://linkedin.com/in/juanperez',
+    linkedin: 'https://tutorial-portafolio-vuejs-lucas-aguil.netlify.app/#top',
     imagen: LucasImg,
   },
   {
@@ -27,7 +27,7 @@ const integrantes = ref([
     //rol: 'Frontend Developer',
     descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/mathias5525',
-    linkedin: 'https://linkedin.com/in/mariagonzalez',
+    linkedin: 'https://mathias5525.github.io/Portafolio-Vuejs/',
     imagen: MatiasImg,
   },
   {
@@ -36,7 +36,7 @@ const integrantes = ref([
     //rol: 'Backend Developer',
     descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/Valentin-bertolone',
-    linkedin: 'https://linkedin.com/in/carlosrodriguez',
+    linkedin: 'https://portafoliovalentinbertolone.netlify.app/#top',
     imagen: ValentinImg,
   },
   {
@@ -45,7 +45,7 @@ const integrantes = ref([
     //rol: 'DevOps Engineer',
     descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/Cecy-Fa',
-    linkedin: 'https://linkedin.com/in/anamartinez',
+    linkedin: 'https://portafolio-cecy-25.netlify.app/',
     imagen: CeciliaImg,
   },
   {
@@ -54,7 +54,7 @@ const integrantes = ref([
     //rol: 'DevOps Engineer',
     descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/JuanMoreno18',
-    linkedin: 'https://linkedin.com/in/anamartinez',
+    linkedin: 'https://portafolio-juanmoreno18.netlify.app/#aTop',
     imagen: JuanImg,
   },
   {
@@ -63,7 +63,7 @@ const integrantes = ref([
     //rol: 'DevOps Engineer',
     descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/ValeriaPinaya',
-    linkedin: 'https://linkedin.com/in/anamartinez',
+    linkedin: 'https://mi-portafolio-valepinaya.netlify.app/',
     imagen: ValeriaImg,
   },
    {
@@ -72,7 +72,7 @@ const integrantes = ref([
     //rol: 'DevOps Engineer',
     descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/dariosci',
-    linkedin: 'https://linkedin.com/in/anamartinez',
+    linkedin: 'https://dariosci.github.io/MiPortafolioVueJS/',
     imagen: DarioImg,
   },
    {
@@ -81,7 +81,7 @@ const integrantes = ref([
     //rol: 'DevOps Engineer',
     descripcion: 'Estudiante de la tecnicatura en programacion de la UTN San Rafael.',
     github: 'https://github.com/ZeladaG940',
-    linkedin: 'https://linkedin.com/in/anamartinez',
+    linkedin: 'https://portafolio-or.netlify.app/',
     imagen: OrlandoImg,
    }
 
@@ -112,45 +112,47 @@ const integrantes = ref([
           </div>
           
           <div class="info">
-            <h3 class="nombre">{{ integrante.nombre }}</h3>
-            <p class="rol">{{ integrante.rol }}</p>
-            <p class="descripcion">{{ integrante.descripcion }}</p>
-            
-            <div class="redes-sociales">
-  <a 
-    :href="integrante.github" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    class="enlace-red"
-    title="GitHub"
-  >
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-    </svg>
-  </a>
-  
-  <a 
-    :href="integrante.linkedin" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    class="enlace-red"
-    title="Perfil profesional"
-  >
-    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-  
-  <rect width="24" height="24" rx="5" fill="#0A66C2"/>
+  <h3 class="nombre">{{ integrante.nombre }}</h3>
+  <p class="rol">{{ integrante.rol }}</p>
+  <p class="descripcion">{{ integrante.descripcion }}</p>
 
-  <!-- Hoja del currículum  -->
-  <rect x="3.5" y="2.5" width="17" height="19" rx="2" ry="2" fill="#F0F6FF"/>
-  <circle cx="12" cy="9" r="4" fill="#0A66C2"/> 
-  <path fill="#0A66C2" d="M5.8 15.5c0-3 12.4-3 12.4 0v2.5H5.8v-2.5z"/> 
+  <!-- Título "Ver más sobre mí" -->
+  <p class="titulo-redes">Ver más sobre mí</p>
 
-  <rect x="7" y="19.3" width="10" height="1" fill="#90CAF9"/>
-  <rect x="7" y="21" width="8" height="1" fill="#90CAF9"/>
-</svg>
-  </a>
+  <!-- Iconos -->
+  <div class="redes-sociales">
+    <a
+      :href="integrante.github"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="enlace-red"
+      title="GitHub"
+    >
+      <!-- GitHub SVG (completo) -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+      </svg>
+    </a>
+
+    <a
+      :href="integrante.linkedin"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="enlace-red"
+      title="Perfil profesional"
+    >
+      <!-- LinkedIn / Perfil SVG (el que usaste antes) -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect width="24" height="24" rx="5" fill="#0A66C2"/>
+        <rect x="3.5" y="2.5" width="17" height="19" rx="2" ry="2" fill="#F0F6FF"/>
+        <circle cx="12" cy="9" r="4" fill="#0A66C2"/>
+        <path fill="#0A66C2" d="M5.8 15.5c0-3 12.4-3 12.4 0v2.5H5.8v-2.5z"/>
+        <rect x="7" y="19.3" width="10" height="1" fill="#90CAF9"/>
+        <rect x="7" y="21" width="8" height="1" fill="#90CAF9"/>
+      </svg>
+    </a>
+  </div>
 </div>
-          </div>
         </div>
       </div>
     </div>
@@ -412,7 +414,7 @@ const integrantes = ref([
 }
 
 /* Celulares pequeños */
-@media (min-width: 375px) and (max-width: 424px) {
+@media (min-width: 375px) and (max-width: 425px) {
   .titulo {
     font-size: 1.1rem;
   }
@@ -443,6 +445,16 @@ const integrantes = ref([
   .enlace-red {
     width: 28px;
     height: 28px;
+  }
+  .titulo-redes {
+    font-size: 0.55rem;
+    margin-top: -11px;
+    margin-bottom: 0px;
+  }
+   .redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
   }
 
   .enlace-red svg {
